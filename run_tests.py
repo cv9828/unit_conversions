@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/bin/env python
 
 import unittest
 
@@ -10,10 +10,10 @@ class TestConvert(unittest.TestCase):
     def test_km_to_miles(self):
         actual = kilometers_to_miles(1)
         expected = 0.621 # from google
-        self.assertAlmostEqual(actual, expected, delta-0.01)
+        self.assertAlmostEqual(actual, expected, delta=0.01)
 
     def test_miles_to_km(self):
-        actual - miles_to_kilometers(1)
+        actual =  miles_to_kilometers(1)
         expected = 1.609 # from google
         self.assertAlmostEqual(actual, expected, delta=0.01)
 
